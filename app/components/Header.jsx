@@ -55,6 +55,14 @@ const Header = () => {
                   Posts
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/products"
+                  className="text-gray-900 dark:text-white hover:underline"
+                >
+                  Shop
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

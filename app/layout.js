@@ -1,6 +1,7 @@
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import "./globals.css";
+import { PRODUCT_PROVIDER } from "./components/Context";
 
 export const metadata = {
   title: "Home | ShopPost - Your Hub for Products and Content",
@@ -11,13 +12,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-grow flex mx-auto w-full max-w-screen-xl p-4">
-          {children}
-        </main>
-        <Footer />
-      </body>
+      <PRODUCT_PROVIDER>
+        <body className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow flex mx-auto w-full max-w-screen-xl p-4">
+            {children}
+          </main>
+          <Footer />
+        </body>
+      </PRODUCT_PROVIDER>
     </html>
   );
 }

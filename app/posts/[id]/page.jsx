@@ -23,7 +23,7 @@ const page = async ({ params }) => {
     <section id="blogSingle">
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
-          <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+          <article className="mx-auto w-full  format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
             <header className="mb-4 lg:mb-6 not-format">
               <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
                 {data?.title}
@@ -67,33 +67,6 @@ const page = async ({ params }) => {
           </article>
         </div>
       </main>
-      <aside
-        aria-label="Related articles"
-        className="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800"
-      >
-        <div className="px-4 mx-auto max-w-screen-xl">
-          <h2 className="mb-8 text-2xl font-bold text-gray-900 dark:text-white">
-            Related articles
-          </h2>
-          <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
-            <article className="max-w-xs">
-              <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                <a href="#">Our first office</a>
-              </h2>
-              <p className="mb-4 text-gray-500 dark:text-gray-400">
-                Over the past year, Volosoft has undergone many changes! After
-                months of preparation.
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
-              >
-                Read More
-              </a>
-            </article>
-          </div>
-        </div>
-      </aside>
     </section>
   );
 };
